@@ -28,7 +28,6 @@ app.use("/cppib", cppibRoutes);
 app.use("/mvCredit", mvCreditRoutes);
 app.use("/solon", solonRoutes);
 
-// const CONNECTION_URL = 'mongodb+srv://DylanMcD:@ihls.ucry11i.mongodb.net/?retryWrites=true&w=majority';
 const PORT = process.env.PORT;
 mongoose
   .connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
