@@ -44,4 +44,3 @@ export const deleteClause = async (endpoint: string, id: string): Promise<void> 
 };
 
 export default API;
-// this is a test
