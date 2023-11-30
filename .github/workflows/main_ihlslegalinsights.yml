@@ -14,25 +14,27 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up .NET Core
-        uses: actions/setup-dotnet@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup_node@v3
         with:
-          dotnet-version: '6.0.x'
-          include-prerelease: true
+          node-version: '16.x'
 
-      - name: Build with dotnet
-        run: dotnet build --configuration Release
+      - name: install npm packages - server
+        run: 
+          cd server
+          npm install
 
-      - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+      - name: install npm packages, build then copy files - client
+        run: 
+          npm install 
+          npm run build 
+          cp -r ./build ../server/public
 
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
-          name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          name: ihls-legal-insights
+          path: ${{env.DOTNET_ROOT}}/server
 
   deploy:
     runs-on: windows-latest
@@ -45,7 +47,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
-          name: .net-app
+          name: ihls-legal-insights
       
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
