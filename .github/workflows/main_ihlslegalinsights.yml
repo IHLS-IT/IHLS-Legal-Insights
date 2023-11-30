@@ -26,6 +26,7 @@ jobs:
 
       - name: install npm packages, build then copy files - client
         run: 
+          cd
           npm install 
           npm run build 
           cp -r ./build ../server
@@ -34,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: ihlsLegalInsights
-          path: /server
+          path: .
 
   deploy:
     runs-on: windows-latest
