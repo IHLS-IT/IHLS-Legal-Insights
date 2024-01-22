@@ -4,7 +4,7 @@
   <Version>0.1.6.0</Version>
   <ProviderName>In-House Legal Solutions</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="IHLS CC app"/>
+  <DisplayName DefaultValue="IHLS Legal Insights"/>
   <Description DefaultValue="This is IHLS internal client information app"/>
   <IconUrl DefaultValue="https://localhost:3000/assets/ihlsLogo.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/ihlsLogo.png"/>
