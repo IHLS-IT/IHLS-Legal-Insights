@@ -1,5 +1,5 @@
 import { FETCH_ALL, CREATE, UPDATE, DELETE } from "../constants/actionTypes";
-import * as api from ".././api/index ";
+import * as api from "../api/index.ts";
 
 /**
  * Action creator that fetches all clauses from the server.

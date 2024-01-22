@@ -87,7 +87,7 @@ export default class App extends React.Component<AppProps, AppState> {
 
     return (
       <div className="ms-welcome">
-        <Header logo={require("./../../../assets/IHLS Header-LO.png")} title={this.props.title} message="Welcome" />
+        <Header logo={require("./../../../assets/IHLS-Header-LO.png")} title={this.props.title} message="Welcome" />
         <HeroList message="Select from the options below" items={this.state.listItems}>
           <p className="ms-font-l">
             Please Select one of the clients below to insert the relevant information into the document.
