@@ -26,8 +26,8 @@ jobs:
         working-directory: ./server
 
       - name: install npm packages, build then copy files - client
-        run: 
-          npm install 
+        run: |
+          npm install,
           npm run build 
           cp -r ./build ./server
 
