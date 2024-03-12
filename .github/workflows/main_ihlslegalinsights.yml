@@ -29,7 +29,7 @@ jobs:
         run: |
           npm install
           npm run build 
-          cp -r ./ ./server
+          cp -r ./dist ./server
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
