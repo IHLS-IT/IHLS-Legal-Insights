@@ -12,7 +12,7 @@
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
   </AppDomains>
-  <Hosts>
+  <Hosts> 
     <Host Name="Document"/>
   </Hosts>
   <DefaultSettings>
