@@ -6,11 +6,12 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="IHLS Legal Insights"/>
   <Description DefaultValue="This is IHLS internal client information app"/>
-  <IconUrl DefaultValue="https://ihlslegalinsights.azurewebsites.net/assets/ihlsLogo.png"/>
+  <IconUrl DefaultValue="https://ihlslegalinsights.azurewebsites.net:3000/assets/ihlsLogo.png"/>
   <HighResolutionIconUrl DefaultValue="https://ihlslegalinsights.azurewebsites.net/assets/ihlsLogo.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
+    <AppDomain>https://ihlslegalinsights.azurewebsites.net</AppDomain>
   </AppDomains>
   <Hosts> 
     <Host Name="Document"/>
