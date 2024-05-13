@@ -8,7 +8,7 @@
       "node_modules{,/**}",
       ".vscode{,/**}"
     ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/d2776077-1a38-4f30-a85c-44534869155a/resourceGroups/ihlsLegalInsights_group/providers/Microsoft.Web/sites/IHLSCC",
+    "appService.defaultWebAppToDeploy": "",
     "appService.deploySubpath": "."
   }
   

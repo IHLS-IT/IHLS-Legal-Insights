@@ -20,9 +20,13 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
+app.get("/", () => {
+  res.send("Hello, World! This is the root path.");
+});
+
 app.use("/arcus", arcusRoutes);
 app.use("/uss", ussRoutes);
-app.use("/any", anyRoutes);
+app.get("/any", anyRoutes);
 app.use("/ifm", ifmRoutes);
 app.use("/cppib", cppibRoutes);
 app.use("/mvCredit", mvCreditRoutes);
